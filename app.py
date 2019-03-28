@@ -45,6 +45,7 @@ def get_log():
 @app.route('/clear', methods=['POST'])
 def clear():
     check_in_dict.clear()
+    return make_response("Check in dictionary cleared", 200)
 
 # TODO: Write a method to return an html page for status of kiosks
 @app.route('/online', methods=['GET'])
